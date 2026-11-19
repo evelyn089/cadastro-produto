@@ -1,0 +1,105 @@
+/* Reset básico e fonte */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 450px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* Container do Formulário */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Ajuste para ignorar as quebras de linha <br> antigas do HTML */
+form br {
+    display: none;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+/* Rótulos e Campos de Texto */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #000102;
+}
+
+/* Botão de Cadastrar */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5d3780;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+/*Aqui é para qndo eu passo o mouse em cima do botão e ele muda de cor*/
+button:hover {
+    background-color: #a751da;
+}
+
+/* Lista de Produtos */
+ul {
+    list-style: none;
+    width: 100%;
+    max-width: 450px;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #8f41c4;
+    font-size: 15px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Produtos</title> <!--Aqui estou conectando meu arquivo em JSON para o meu programa-->
+  
+    
+</head>
+
+<body>
+  
+    <link rel="stylesheet" href="cadastro.css">
+
+  <h1>Cadastro de Produtos</h1>
+  <ul id="lista"></ul>
+
+  <script>
+    
+    const URL_API = "https://technoworks.com.br/api/items";
+    
+
+    fetch(URL_API)
+      .then(resposta => resposta.json())
+      .then(dados => console.log(dados));
+  </script>
+
+
+    
+    <form id="formProduto">
+        <div>
+            <label for="nome">Nome do Produto:</label><br>
+            <input type="text" id="nome" required>
+        </div>
+        <br>
+        <div>
+            <label for="preco">Preço (R$):</label><br>
+            <input type="number" id="preco" step="0.01" required>
+        </div>
+        <br>
+        <div>
+            <label for="quantidade">Quantidade em Estoque:</label><br>
+            <input type="number" id="quantidade" required>
+        </div>
+        <br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h3>Lista de Produtos</h3>
+    <ul id="listaProdutos"></ul>
+      <script src="cadastro.js"></script>
+
+</body>
+</html>
+
+
+</body>
+</html>
